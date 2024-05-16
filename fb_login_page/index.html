@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook | Login or Sign Up</title>
-</head>
-<body>
-    
-</body>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook - Login or Sign Up</title>
+  </head>
+  <body class="bg-slate-100">
+    <div class="container mt-10 flex flex-col px-7">
+      <!-- ======================== LEFT ========================== -->
+      <div class=" rounded-lg mt-5 px-4 py-0">
+        <img src="images/logo-real.png" alt="" />
+        <p class="text-xs text-center">
+         Helps you connect and share with the people in your life
+        </p>
+      </div>
+
+      <!-- ======================== RIGHT ========================== -->
+      <div
+        class="right bg-white rounded-lg flex flex-col text-center border- mt-3 px-2 py-5"
+      >
+        <input
+          type="text"
+          class="border-2 focus:border-black  text-xs rounded-md w-auto py-2 px-2 my-1"
+          placeholder="Email Address or Phone Number"
+        />
+        <input
+          type="password"
+          class="border-2 focus:border-black text-xs rounded-md w-auto py-2 px-2 my-1"
+          placeholder="Enter Your Password"
+        />
+        <button class="btn bg-blue-600 text-white rounded-md px-5 py-2 my-2 active:bg-blue-700">
+          Login
+        </button>
+        <span class="pb-1 text-blue-600">Forgotten Password?</span>
+        <hr class="text-black" />
+       <div class="new-acc">
+        <button class="border-2 py-2 bg-green-500 text-white active:bg-green-600 rounded-md w-3/4 border-slate-200 text-center mt-3">
+            Create Account
+          </button>
+       </div>
+      </div>
+    </div>
+  </body>
 </html>
