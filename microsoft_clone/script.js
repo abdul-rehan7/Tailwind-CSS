@@ -1,12 +1,16 @@
-
-
-
-function showSidebar(){
-    const sideBar = document.querySelector('#navbar')
-    sideBar.style.display = 'block'
+function showSidebar() {
+  const sideBar = document.querySelector("#navbar");
+  sideBar.style.display = "block";
 }
 
-function hideSidebar(){
-    const sideBar = document.querySelector('#navbar')
-    sideBar.style.display = 'none'
+function hideSidebar() {
+  const sideBar = document.querySelector("#navbar");
+  sideBar.style.display = "none";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector("#burger").onclick = showSidebar;
+});
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector("#cross").onclick = hideSidebar;
+});
