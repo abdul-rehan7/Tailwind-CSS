@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Microsoft - Official Home Page</title>
   </head>
@@ -12,7 +21,10 @@
     <div class="nav flex flex-row justify-between items-center md:px-16 px-4">
       <!-- ============ LEFT =========== -->
       <div class="LEFT flex md:order-2">
-        <div class="burger md:hidden inline-block cursor-pointer">
+        <div
+          onclick="showSidebar()"
+          class="burger md:hidden inline-block cursor-pointer"
+        >
           <div class="h-[0.01rem] rounded-full w-4 bg-black mt-1"></div>
           <div class="h-[0.01rem] rounded-full w-4 bg-black mt-1"></div>
           <div class="h-[0.01rem] rounded-full w-4 bg-black mt-1"></div>
@@ -25,8 +37,12 @@
       <div class="MID cursor-pointer w-36 md:order-1 flex">
         <img href=".nav" src="imgs/header.png" alt="" />
         <div
-          class="absolute -translate-x-96 px-7 md:bg-transparent bg-blue-500 mt-10 md:space-x-7 md:mt-5 md:translate-x-36 md:flex features"
+          id="navbar"
+          class="absolute hidden left-0 md:left-[4rem] md:w-[50vw] w-[100vw] px-3 space-y-7 text-black md:text-black md:space-y-0 h-[90vh] py-3 md:py-0 md:bg-transparent bg-neutral-100 mt-[0rem] md:space-x-7 md:mt-5 md:translate-x-36 md:flex features"
         >
+          <div onclick="hideSidebar()" class="text-white font-bold text-2xl">
+            <i class="fa-solid fa-xmark ml-1 text-black md:hidden "></i>
+          </div>
           <div
             class="item cursor-pointer hover:underline hover:underline-offset-4 font-semibold active:text-gray-500"
           >
